@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Link Exercise</title>
+    </head>
+    <body>
+        <h1>General Information Link </h1>
+
+        <!--Relative Link-->
+        Click <a href="download1.php/">
+            Go to Download Page 1/</a> to download 
+
+        <br> 
+
+        Click <a href="download2.php/">
+        Go to Download Page 2/</a> to download 
+        
+        <br> 
+
+        <!--Absolute Link-->
+        <a href="file:///C:/Users/Nurul%20Asyiqin/Desktop/my_website/download1.php/logo_uitm.pdf">
+        View Logo UiTM
+        </a>
+
+        <br>
+
+        <a href="download2.php/statistic.html">
+        Get Data </a>
+
+        <hr size="3" color="green"> 
+
+        <!--Local - Link to other pages within the current website-->
+        <a href="bio.html" target="_blank"> Biodata </a>
+        <a href="childhood.html" target="_blank"> Childhood </a>
+        <a href="link.html" target="_blank"> Link </a>
+
+        <br> 
+
+        <!--Creating button using button onclick-->
+        <button onclick="document.location=' bio.html'">Biodata</button>
+        <button onclick="document.location=' childhood.html'">Childhood</button>
+        <button onclick="document.location=' link'">Link</button>
+
+        <br>
+        <p>
+
+        
+        <!--Using image as hyperlink, local link-->
+        <a href="childhood.html"><img src ="images/button.png"> </a>
+
+        <!--Using images as hyperlink,global link-->
+        <a href="https://www.instagram.com/cffeoasy/?hl=en"><img src="images/instagram real.png" width="40px"> </a>
+
+        </p>
+        <p>
+        <!--Image Maps-->
+        <img src="images/malaysia-map.jpg" usemap="#image-map">
+
+        <map name="image-map">
+    <area target="_blank" alt="UiTM Samarahan" title="UiTM Samarahan" href="https://sarawak.uitm.edu.my/" coords="969,602,1428,348" shape="rect">
+    <area target="_blank" alt="UiTM Seri Iskandar" title="UiTM Seri Iskandar" href="https://perak.uitm.edu.my/index.php/en/" coords="336,451,99" shape="circle">
+    <area target="_blank" alt="UiTM Segamat" title="UiTM Segamat" href="https://johor.uitm.edu.my/" coords="553,661,549,712,532,749,610,819,653,860,694,831,729,830,735,854,748,847,735,777,705,717,681,685,650,701,613,700,591,692" shape="poly">
+        </map>
+    
+        </p>
+    </body> 
+</html>

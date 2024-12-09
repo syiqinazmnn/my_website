@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata</title>
+  <style>
+    body {
+      background-image: url(images/background\ 6.jpg);
+      font-family: Arial, sans-serif;
+    }
+
+    .item1 { grid-area: general; }
+    .item2 { grid-area: education; }
+    .item3 { grid-area: interest; }
+    .item4 { grid-area: quote; }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'general general general interest interest interest'
+        'education education education quote quote quote';
+      gap: 30px;
+      padding: 10px;
+    }
+
+    .grid-container > div {
+      margin: 3px; 
+      background-color: rgba(210, 247, 206, 0.952);
+      text-align: center;
+      padding: 25px 25px; 
+      font-size: 18px;
+      border-radius: 15px; 
+      box-shadow: 0 4px 8px rgba(0, 36, 5, 0.925); 
+    }
+
+    .grid-container > div p {
+      font-size: 20px; 
+      line-height: 1.6; 
+      text-align: left;
+    }
+
+    .navbar {
+      background-color: #2d5333;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .navbar .logo a {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: inline-flex;
+    }
+
+    .navbar li {
+      margin-right: 20px;
+    }
+
+    .navbar li a {
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      color: #14b905;
+    }
+
+    .footer {
+      background-color: #2d5333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      color: #14b905;
+    }
+
+    .footer .access-keys {
+      margin-top: 20px;
+    }
+
+    .footer .date-time {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+    }
+
+    aside {
+      background-color: rgba(210, 247, 206, 0.95);
+      padding: 15px;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0, 36, 5, 0.925);
+    }
+
+    aside h3 {
+      text-align: center;
+      color: #103115;
+    }
+
+    .playlists-container {
+      display: flex;
+      flex-direction: column; 
+      gap: 10px; 
+    }
+
+    .playlist {
+      width: 100%; 
+      height: 152px; 
+      border-radius: 12px; 
+}
+
+.movie-recommendations {
+  text-align: center;
+}
+
+.movie-recommendations h4 {
+  margin-bottom: 20px; 
+}
+
+
+.movie-recommendations .movie {
+  display: inline-block; 
+  margin: 10px; 
+  text-align: center;
+}
+
+.movie iframe {
+  border-radius: 10px; 
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="Home Page.html" accesskey="1" tabindex="1"> ๋࣭ ⭑────୨ৎ────⭑๋࣭  SYIQIN'S SCENE ๋࣭ ⭑────୨ৎ────⭑๋࣭  </a>
+    </div>
+    <ul>
+      <li><a href="bio.html" accesskey="2" tabindex="2">BIODATA</a></li>
+      <li><a href="link.html" accesskey="3" tabindex="3">EDUCATION</a></li>
+      <li><a href="childhood.html" accesskey="4" tabindex="4">FAMILY</a></li>
+      <li><a href="interest.html" accesskey="5" tabindex="5">INTEREST</a></li>
+      <li><a href="bucket-list.html" accesskey="6" tabindex="6">BUCKET LIST</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <h1>BIODATA</h1>
+
+  <div class="grid-container">
+    <div class="item1">
+      <h3>ABOUT ME</h3>
+      <p>
+        My name is <strong>Nurul Asyiqin Binti Azman</strong>. Born on June 18<sup>th</sup>, 2004, I am the middle child in a family of three siblings. 
+        I grew up in <b>Kuala Lumpur</b>, but feel connected to the calmness of kampung life, as my parents are from Pahang.
+        <br><br>
+        Fun fact: My birth time was 6:42<sub>pm</sub>, a special moment I believe influenced my love for <i>twilight hours</i>.
+      </p>
+      <a href="images/IMG_0067.JPG">
+      <img src="images/mini me_resize.JPG" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;"  hspace="10" vspace="10"></a>
+    </div>
+
+    <div class="item2">
+      <h3>EDUCATION</h3>
+      <p> 
+          <ul type="square" style="text-align: left;">
+              <li>Kindergarten: <abbr title="Pusat Asuhan Tunas Islam">PASTI </abbr> Ilmi</li><br>
+              <li>Primary: <abbr title="Sekolah Kebangsaan Sungai Tua Baharu">SKSTB</abbr></li>
+                  <ol>
+                    <li>I was part of the school's orchestra</li>
+                    <li>I was part of the marching band</li>
+                  </ol><br>
+              <li>Secondary: <abbr title="Sekolah Menengah Kebangsaan Taman Selayang ">SEMENTAS</abbr></li>
+                  <ol> 
+                    <li>I was in the Engineering Science Stream during secondary school</li>
+                    <li>I was a member of school cooperative</li>
+                  </ol><br>
+              <li>University: Information Management <abbr title="Universiti Teknologi MARA">UiTM</abbr>, Rembau Campus </li><br>
+              </ul>
+      </p>
+          <a href="images/DSC_5969.JPG"> </a>
+          <img src="images/DSC_5969.JPG" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+        
+    </div>
+
+    <div class="item3">
+      <h3>INTEREST</h3>
+      <p style="text-align: left;">
+        My favorites include:<br>
+        <ul type="circle" style="text-align: left;">
+          <li>Music:<b>BTS</b>, <b>Beyoncé</b>, and musicals like <b>Tick, Tick... Boom!</b></li><br>
+          <li>Sports: Netball </li><br>
+          <li>Food: <i>Ayam Gepuk</i></li><br>
+          <li>Drink: <i>Chrysanthemum Tea</i></li><br>
+        </ul>
+      </p>
+      <a href="images/Ayam Gepuk.jpg"></a>
+      <img src="images/Ayam Gepuk.jpg" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+    </div>
+
+    <div class="item4">
+      <h3>Favorite Quotes</h3>
+      <p>
+        <blockquote>
+          <i>"There is no limit to what we, as women, can accomplish."</i><br>
+          – <strong>Michelle Obama</strong>
+        </blockquote>
+        <br>Another favorite of mine:<br>
+        <blockquote>
+          <em>"The secret of getting ahead, is getting started."</em><br>
+          – <b>Sally Berger</b>
+        </blockquote>
+      </p>
+      <a href="images/fav quote.jpg">
+      <img src="images/fav quote.jpg" height="250" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Aside Section: Playlists & Movie Recommendations -->
+  <aside>
+    <h3>My Playlists & Movie Recommendations</h3>
+
+  <!-- Playlist Section -->
+    <div class="playlists-container">
+      <h4>My Favorite Playlist</h4>
+        <iframe class="playlist" 
+                src="https://open.spotify.com/embed/playlist/6HBVJgAlZESfyz4UnWtvam?utm_source=generator" 
+                frameborder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+      
+        <iframe class="playlist" 
+                src="https://open.spotify.com/embed/album/76290XdXVF9rPzGdNRWdCh?utm_source=generator" 
+                frameborder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+      </div>
+      
+
+    </div>
+
+
+    <!-- Movie Recommendations -->
+    <div class="movie-recommendations">
+      <h3>Movie and TV-Show Recommendations</h3>
+      <div class="movie">
+        <h4>Brooklyn 99</h4>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/icTOP9F17pU?si=uzVNRg-Z4Zqzb-Re" title="YouTube video player" frameborder="0" allowfullscreen> </iframe>
+      </div>
+      <div class="movie">
+        <h4>Little Women</h4>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/AST2-4db4ic?si=OY6D3l3ZrmuE-cPr" title="YouTube video player" frameborder="0" allowfullscreen> </iframe>
+      </div>
+      <div class="movie">
+        <h4>Someone Great</h4>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/BBd9gcrj2Wk?si=JQQB4Cn95o-YyT5e" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+  </aside>
+
+  <footer class="footer">
+    <div>
+        <a href="mailto:nasyiqin06@gmail.com" accesskey="7" tabindex="7">
+            <img src="images/gmail.png" width="50px" height="50px" alt="Email"> 
+        </a>
+        <a href="https://www.instagram.com/cffeoasy" accesskey="8" tabindex="8">
+            <img src="images/instagram_resize_real.png" width="50px" height="50px" alt="Instagram"> 
+        </a>
+        <a href="https://x.com/CFFEOASY" accesskey="9" tabindex="9">
+            <img src="images/twitter.png" width="50px" height="50px" alt="Twitter">
+        </a>
+    </div>
+
+    <br> 
+
+    <div class="access-keys">
+        <p>Access Key Shortcuts:</p>
+        <p>1 - SYIQIN'S SCENE | 2 - BIODATA | 3 - EDUCATION | 4 - FAMILY | 5 - INTEREST | 6 - BUCKET LIST</p>
+        <p>7 - Email | 8 - Instagram | 9 - Twitter</p>
+    </div>
+
+    <p><a href="#top" accesskey="T" tabindex="10">Back to Top</a></p>
+
+    <p>© 2024 SYIQIN'S SCENE</p>
+
+    <div class="date-time" id="dateTime"></div>
+</footer>
+
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        const dateTimeElement = document.getElementById('dateTime');
+        dateTimeElement.innerText = now.toLocaleString(); 
+    }
+    setInterval(updateDateTime, 1000); 
+    updateDateTime(); 
+</script>
+</body>
+
+</html>
