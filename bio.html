@@ -4,15 +4,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biodata</title>
   <style>
-    body {
-      background-image: url(images/background\ 6.jpg);
-      font-family: Arial, sans-serif;
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #597a26; /* Muted Green */
+      padding: 15px 20px;
+      font-family:Helvetica;
+      text-align: left;
+      border-bottom: 3px solid #E8AA14; /* Golden Accent */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .item1 { grid-area: general; }
-    .item2 { grid-area: education; }
-    .item3 { grid-area: interest; }
-    .item4 { grid-area: quote; }
+    .navbar .logo a {
+      font-size: 30px;
+      font-weight: bold;
+      color: #F8EDD9; /* Creamy white */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .logo a:hover {
+      color: #E8AA14; /* Golden Yellow */
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin-right: 20px;
+    }
+
+    .navbar li a {
+      font-size: 18px;
+      color: #F8EDD9; /* Creamy white */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li a:hover {
+      color: #E8AA14; /* Golden Yellow */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Ensures padding and border are included in dimensions */
+      font-family:Arial, sans-serif, sans-serif;
+      background-image: url(images/background\ 6.jpg);
+    }
+
+    .item1 { 
+      grid-area: general; 
+      background-color: rgba(253, 251, 184, 0.993); 
+    }
+
+    .item2 { 
+      grid-area: education; 
+      background-color: rgba(216, 255, 255, 0.952); 
+    }
+
+    .item3 { 
+      grid-area: interest; 
+      background-color: rgba(251, 231, 185, 0.952); 
+    }
+
+    .item4 { 
+      grid-area: quote; 
+      background-color: rgba(205, 255, 195, 0.952); 
+    }
 
     .grid-container {
       display: grid;
@@ -24,8 +89,7 @@
     }
 
     .grid-container > div {
-      margin: 3px; 
-      background-color: rgba(210, 247, 206, 0.952);
+      margin: 3px;
       text-align: center;
       padding: 25px 25px; 
       font-size: 18px;
@@ -39,74 +103,19 @@
       text-align: left;
     }
 
-    .navbar {
-      background-color: #2d5333;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    .navbar .logo a {
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: inline-flex;
-    }
-
-    .navbar li {
-      margin-right: 20px;
-    }
-
-    .navbar li a {
-      font-size: 18px;
-      color: white;
-      text-decoration: none;
-    }
-
-    .navbar li a:hover {
-      color: #14b905;
-    }
-
-    .footer {
-      background-color: #2d5333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    .footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer a:hover {
-      color: #14b905;
-    }
-
-    .footer .access-keys {
-      margin-top: 20px;
-    }
-
-    .footer .date-time {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
     h1 {
       text-align: center;
-      color: #000000;
+      color: #0d2900;
+      text-decoration: underline;
     }
 
     aside {
-      background-color: rgba(210, 247, 206, 0.95);
+      background-color: rgba(237, 242, 201, 0.95);
       padding: 15px;
       margin-top: 10px;
+      margin-bottom: 20px; /* Adds spacing below the aside */
+      margin-left: 20px; /* Adds spacing to the left */
+      margin-right: 20px; /* Adds spacing to the right */
       box-shadow: 0 4px 8px rgba(0, 36, 5, 0.925);
     }
 
@@ -125,26 +134,52 @@
       width: 100%; 
       height: 152px; 
       border-radius: 12px; 
-}
+    }
 
-.movie-recommendations {
-  text-align: center;
-}
+    .movie-recommendations {
+      text-align: center;
+    }
 
-.movie-recommendations h4 {
-  margin-bottom: 20px; 
-}
+    .movie-recommendations h4 {
+      margin-bottom: 20px; 
+    }
 
+    .movie-recommendations .movie {
+      display: inline-block; 
+      margin: 10px; 
+      text-align: center;
+    }
 
-.movie-recommendations .movie {
-  display: inline-block; 
-  margin: 10px; 
-  text-align: center;
-}
+    .movie iframe {
+      border-radius: 10px; 
+    }
 
-.movie iframe {
-  border-radius: 10px; 
-}
+    /* Footer */
+    .footer {
+      background-color: #597a26; /* Muted Green */
+      color: #F8EDD9; /* Creamy White */
+      text-align: center;
+      font-family:Helvetica;
+      border-top: 3px solid #E8AA14; /* Golden Accent */
+      width: 100%; /* Ensures the footer spans the full screen */
+      margin: 0; /* Removes any default margins */
+      padding: 10px 0; /* Adds vertical spacing for content */
+      box-sizing: border-box; /* Includes padding and border in the width calculation */
+    }
+
+    .footer a {
+      color: #F8EDD9; /* Creamy white */
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #E8AA14; /* Golden Yellow */
+    }
+
+    .date-time {
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
 
   </style>
 </head>
@@ -152,33 +187,34 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="logo">
-      <a href="index.html" accesskey="1" tabindex="1"> ๋࣭ ⭑────୨ৎ────⭑๋࣭  SYIQIN'S SCENE ๋࣭ ⭑────୨ৎ────⭑๋࣭  </a>
+      <a href="index.html" accesskey="1" tabindex="1">SYIQIN'S SCENE</a>
     </div>
     <ul>
       <li><a href="bio.html" accesskey="2" tabindex="2">BIODATA</a></li>
-      <li><a href="link.html" accesskey="3" tabindex="3">EDUCATION</a></li>
-      <li><a href="childhood.html" accesskey="4" tabindex="4">FAMILY</a></li>
-      <li><a href="interest.html" accesskey="5" tabindex="5">INTEREST</a></li>
-      <li><a href="bucket-list.html" accesskey="6" tabindex="6">BUCKET LIST</a></li>
+      <li><a href="education.html" accesskey="3" tabindex="3">EDUCATION</a></li>
+      <li><a href="experience.html" accesskey="4" tabindex="4">EXPERIENCE</a></li>
+      <li><a href="family.html" accesskey="5" tabindex="5">FAMILY</a></li>
+      <li><a href="friends.html" accesskey="6" tabindex="6">FRIENDS</a></li>
+      <li><a href="gallery.html" accesskey="7" tabindex="7">GALLERY</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
-  <h1>BIODATA</h1>
+  <h1>⋆⁺₊⋆ ━━━━⊱༒︎ • BIODATA • ༒︎⊰━━━━ ⋆⁺₊⋆</h1>
 
   <div class="grid-container">
     <div class="item1">
       <h3>ABOUT ME</h3>
       <p>
         My name is <strong>Nurul Asyiqin Binti Azman</strong>. Born on June 18<sup>th</sup>, 2004, I am the middle child in a family of three siblings. 
-        I grew up in <b>Kuala Lumpur</b>, but feel connected to the calmness of kampung life, as my parents are from Pahang.
+        I grew up in <b>Kuala Lumpur</b>, but feel connected to the calmness of <em>kampung</em> life, as my parents are from Pahang.
         <br><br>
         Fun fact: My birth time was 6:42<sub>pm</sub>, a special moment I believe influenced my love for <i>twilight hours</i>.
       </p>
       <a href="images/IMG_0067.JPG">
-      <img src="images/mini me_resize.JPG" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;"  hspace="10" vspace="10"></a>
+      <img src="images/mini me_resize.JPG" height="200" style="border-radius: 30px; border: 3px solid #000000; transition: transform 0.3s ease;"  hspace="10" vspace="10"></a>
     </div>
 
     <div class="item2">
@@ -200,7 +236,7 @@
               </ul>
       </p>
           <a href="images/DSC_5969.JPG"> 
-          <img src="images/DSC_5969.JPG" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+          <img src="images/DSC_5969.JPG" height="200" style="border-radius: 30px; border: 3px solid #000000; transition: transform 0.3s ease;" hspace="10" vspace="10">
         </a>
     </div>
 
@@ -216,12 +252,12 @@
         </ul>
       </p>
       <a href="images/Ayam Gepuk.jpg">
-      <img src="images/Ayam Gepuk.jpg" height="200" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+      <img src="images/Ayam Gepuk.jpg" height="200" style="border-radius: 30px; border: 3px solid #000000; transition: transform 0.3s ease;" hspace="10" vspace="10">
       </a>
     </div>
 
     <div class="item4">
-      <h3>Favorite Quotes</h3>
+      <h3>FAVORITES QUOTES</h3>
       <p>
         <blockquote>
           <i>"There is no limit to what we, as women, can accomplish."</i><br>
@@ -234,7 +270,7 @@
         </blockquote>
       </p>
       <a href="images/fav quote.jpg">
-      <img src="images/fav quote.jpg" height="250" style="border-radius: 30px; border: 3px solid #108310; transition: transform 0.3s ease;" hspace="10" vspace="10">
+      <img src="images/fav quote.jpg" height="250" style="border-radius: 30px; border: 3px solid #000000; transition: transform 0.3s ease;" hspace="10" vspace="10">
       </a>
     </div>
 
@@ -246,21 +282,18 @@
 
   <!-- Playlist Section -->
     <div class="playlists-container">
-      <h4>My Favorite Playlist</h4>
-        <iframe class="playlist" 
-                src="https://open.spotify.com/embed/playlist/6HBVJgAlZESfyz4UnWtvam?utm_source=generator" 
-                frameborder="0" allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy"></iframe>
+      <h3>My Favorite Playlist</h3>
+      <iframe class="playlist"
+          src="https://open.spotify.com/embed/album/3mH6qwIy9crq0I9YQbOuDf?utm_source=generator" 
+          frameBorder="0" allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy"></iframe>
       
-        <iframe class="playlist" 
-                src="https://open.spotify.com/embed/album/76290XdXVF9rPzGdNRWdCh?utm_source=generator" 
-                frameborder="0" allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy"></iframe>
-      </div>
-      
-
+      <iframe class="playlist" 
+          src="https://open.spotify.com/embed/album/76290XdXVF9rPzGdNRWdCh?utm_source=generator" 
+          frameborder="0" allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy"></iframe>
     </div>
 
 
@@ -309,17 +342,13 @@
     <p>© 2024 SYIQIN'S SCENE</p>
 
     <div class="date-time" id="dateTime"></div>
-</footer>
 
-<script>
-    function updateDateTime() {
-        const now = new Date();
-        const dateTimeElement = document.getElementById('dateTime');
-        dateTimeElement.innerText = now.toLocaleString(); 
-    }
-    setInterval(updateDateTime, 1000); 
-    updateDateTime(); 
-</script>
+    <script>
+      // Set the last modified date dynamically
+      const lastModified = new Date(document.lastModified);
+      document.getElementById('dateTime').textContent = 
+      `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}`;
+    </script>
+  </footer>
 </body>
-
 </html>
