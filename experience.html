@@ -202,29 +202,32 @@
   </div>
   
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div>
-            <a href="mailto:nasyiqin06@gmail.com" accesskey="8" tabindex="8">
-                <img src="images/gmail.png" width="50" height="50" alt="Email">
-            </a>
-            <a href="https://www.instagram.com/cffeoasy" accesskey="9" tabindex="9">
-                <img src="images/instagram_resize_real.png" width="50" height="50" alt="Instagram">
-            </a>
-            <a href="https://x.com/CFFEOASY" accesskey="10" tabindex="10">
-                <img src="images/twitter.png" width="50" height="50" alt="Twitter">
-            </a>
-        </div>
-        <p class="access-keys">Access Key Shortcuts: 1 - Home | 2 - Biodata | 3 - Education | 4 - Experience | 5 - Family | 6 - Friends | 7 - Gallery | 8 - Email | 9 - Instagram | 10 - Twitter</p>
-        <p><a href="#top" accesskey="T" tabindex="11">Back to Top</a></p>
-        <p>© 2024 SYIQIN'S SCENE</p>
-        <div class="date-time" id="dateTime"></div>
-    </footer>
+  <footer class="footer">
+    <div>
+      <a href="mailto:nasyiqin06@gmail.com" tabindex="8">
+        <img src="images/gmail.png" width="50" height="50" alt="Email">
+      </a>
+      <a href="https://www.instagram.com/cffeoasy"  tabindex="9">
+        <img src="images/instagram_resize_real.png" width="50" height="50" alt="Instagram">
+      </a>
+      <a href="https://x.com/CFFEOASY"  tabindex="10">
+        <img src="images/twitter.png" width="50" height="50" alt="Twitter">
+      </a>
+    </div>
+    <p class="access-keys">Access Key Shortcuts (Alt+N): 1 - Home | 2 - Biodata | 3 - Education | 4 - Experience | 5 - Family | 6 - Friends | 7 - Gallery | </p>
+
+    <p><a href="#top" tabindex="11">Back to Top</a></p>
+
+    <p>© 2024 SYIQIN'S SCENE</p>
+
+    <div class="date-time" id="dateTime"></div>
 
     <script>
-        const lastModified = new Date(document.lastModified);
-        document.getElementById('dateTime').textContent =
-            `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}`;
+      // Set the last modified date dynamically
+      const lastModified = new Date(document.lastModified);
+      document.getElementById('dateTime').textContent = 
+      `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}`;
     </script>
+  </footer>
 </body>
 </html>
